@@ -152,7 +152,8 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num,exponent);
+  var result= Math.pow(num,exponent);
+  return result;
 }
 
 function redondearNumero(num) {
@@ -166,7 +167,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  Math.ceil(num);
+ return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -197,7 +198,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var explamacion ='1';
+  var explamacion ='!';
   return str + explamacion;
 } 
 
@@ -214,7 +215,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   var saludo = 'Hola ';
-  return saludo + nombre;
+  return saludo + nombre + '!';
   
 }
 
@@ -254,7 +255,22 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  var comparar = 'a';
+  if( letra.length == comparar.length){
+    if(letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u'){
+      return 'Es vocal';
+    }
+    else{
+      return 'Dato incorrecto';
+    }
+  }
+   
+  else{
+    return 'Dato incorrecto';
+  }
+
+
+
 }
 
 
